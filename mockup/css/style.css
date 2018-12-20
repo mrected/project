@@ -1,0 +1,108 @@
+@import url('https://use.typekit.net/eze0exp.css');
+
+:root {
+  --main-bg-color: #0342e2;
+  --accent-color-one: #fb7513;
+  --accent-color-two: #100894;
+  --button-hover: #10089433;
+  --white: #e4e4ef;
+}
+
+body {
+  font-size: 10px;
+  background-color: var(--main-bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.enter-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 60px;
+}
+
+.main-logo {
+  width: 80%;
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+.search-button {
+  border: solid 3px var(--accent-color-two);
+  border-radius: 25px;
+  color: var(--white);
+  padding: 35px;
+  font-size: 3rem;
+  font-family: quatro, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: none;
+}
+
+.search-button:hover {
+  border: solid 2px var(--accent-color-one);
+  background-color: var(--button-hover);
+}
+
+.main-footer {
+  position: absolute;
+  min-width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  padding: 20px 0;
+  border-top: solid 3px var(--accent-color-two);
+}
+
+.main-footer a,
+.main-footer {
+  font-size: 3rem;
+  font-family: quatro, sans-serif;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.main-footer a {
+  padding: 0 30px;
+}
+
+.main-footer a:link,
+.main-footer a:visited,
+.main-footer a:active {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.main-footer a:hover {
+  color: var(--accent-color-one);
+  text-decoration: none;
+}
+
+/* enter info --------------------------------------------------- */
+
+input,
+select {
+  font-size: 3rem;
+  text-align: center;
+  background-color: transparent;
+  color: var(--white);
+  border: 0;
+}
+
+option {
+  font-size: 1rem;
+}
