@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+
 import './App.css'
 import EnterInfo from './components/EnterInfo'
 import Splash from './components/Splash'
@@ -12,14 +14,16 @@ class App extends Component {
   render() {
     return (
       <>
-        {/*https://xd.adobe.com/view/c029d25b-319f-4b3a-63b9-19ad7296cdf7-b618/*/}
-        {/* <Splash /> */}
-        <EnterInfo />
-        {/* <StartSearching /> */}
-        {/* <EnterSearchInfo /> */}
-        {/* <MatchedInfo /> */}
-        {/* <Clarification /> */}
-        {/* <Closing /> */}
+        <Router>
+          {/*https://xd.adobe.com/view/c029d25b-319f-4b3a-63b9-19ad7296cdf7-b618/*/}
+          <Link to={`${match.url}/splash`}>Splash</Link> />
+          <EnterInfo />
+          <StartSearching />
+          <EnterSearchInfo />
+          <MatchedInfo />
+          <Clarification />
+          <Closing />
+        </Router>
       </>
     )
   }
