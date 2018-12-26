@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link} from 'react-router-dom'
 import logo from '../images/main-logo.svg'
 
 class EnterInfo extends Component {
@@ -63,6 +64,15 @@ class EnterInfo extends Component {
             <option value="Wisconsin">Wisconsin</option>
             <option value="Wyoming">Wyoming</option>
           </select>
+          <ul className="router">
+            <li><Link to={`/`}>Splash </Link> </li>
+            <li><Link to={`start`}> Start </Link></li>
+            <li><Link to={`/user_info`}> User Info </Link> </li>
+            <li><Link to={`/search_info`}> Search Info </Link> </li>
+            <li><Link to={`/matches`}> Matches </Link> </li>
+            <li><Link to={`/clarify`}> Clarify </Link> </li>
+            <li><Link to={`/closing`}> Closing </Link> </li>
+          </ul>
         </div>
       </>
     )

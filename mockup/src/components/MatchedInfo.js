@@ -4,7 +4,7 @@ class MatchedInfo extends Component {
   render() {
     return (
       <>
-        <p>MatchedInfo</p>
+        <p>Matched Info</p>
       </>
     )
   }

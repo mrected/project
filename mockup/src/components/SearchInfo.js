@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class EnterSearchInfo extends Component {
+class SearchInfo extends Component {
   render() {
     return (
       <>
@@ -10,4 +10,4 @@ class EnterSearchInfo extends Component {
   }
 }
 
-export default EnterSearchInfo
+export default SearchInfo

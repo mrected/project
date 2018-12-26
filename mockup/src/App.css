@@ -6,6 +6,8 @@
   --accent-color-two: #100894;
   --button-hover: #10089433;
   --white: #e4e4ef;
+  --serif-font:"quatro-slab", 'Times New Roman', Times, serif;
+  --sans-serif-font:"quatro", sans-serif;
 }
 
 body {
@@ -38,7 +40,7 @@ body {
   color: var(--white);
   padding: 35px;
   font-size: 3rem;
-  font-family: quatro, sans-serif;
+  font-family: var(--sans-serif-font);
   font-weight: 400;
   text-decoration: none;
   background-color: none;
@@ -63,7 +65,7 @@ body {
 .main-footer a,
 .main-footer {
   font-size: 3rem;
-  font-family: quatro, sans-serif;
+  font-family: var(--sans-serif-font);
   font-weight: 400;
   color: var(--white);
 }
@@ -94,27 +96,90 @@ body {
   align-items: center;
 }
 
-/* start searching --------------------------------------------------- */
+.start-searching-btn{
+  font-size: 1.25rem;
+  margin-top: 50px;
+  padding: 15px;
+  border: solid 2px var(--white);
+  border-radius: 15px;
+}
+
+.start-searching-btn:link, .start-searching-btn:visited, .start-searching-btn:active{
+  color: var(--white);
+  text-decoration: none;
+  font-family: var(--sans-serif-font);
+} 
+
+.router{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.router a:link, .router a:visited, .router a:active{
+  color:var(--white);
+}
+
+.router a:hover {
+  color:var(--accent-color-one);
+}
+
+.tagline{
+  text-align: center;
+  color: var(--white);
+  font-family: var(--serif-font);
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.splash .main-logo{
+  margin-top: 200px;
+}
+
+/* login --------------------------------------------------- */
+
+.login{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login .main-logo{
+  width:100px;
+  padding-top: 25px;
+  margin: 0;
+}
+
+.temp-auth {
+  width: 260px;
+  padding-bottom: 25px;
+}
 
 /* enter info --------------------------------------------------- */
 
 .enter-info {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: flex-end; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /* justify-content: space-evenly; */
-  /* padding: 60px; */
-  /* width: 100%; */
+  margin-top: 50px;
+  width: 100%;
 }
 
 input,
 select {
   font-size: 3rem;
-  text-align: center;
+  /* text-align: center; */
   background-color: transparent;
   color: var(--white);
   width: 100%;
-  /* border: 0; */
+  border: 0;
 }
 
 input::placeholder {
@@ -126,7 +191,7 @@ option,
 select {
   display: block;
   margin: 0 auto;
-  width: 60%;
+  /* width: 60%; */
   font-size: 1rem;
   font-size: 2.5rem;
 }
