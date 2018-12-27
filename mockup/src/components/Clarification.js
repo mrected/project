@@ -23,8 +23,8 @@ class Clarification extends Component {
         <p>do you think this is a match?</p>
           
           <nav className="main-footer">
-            <Link to={`search_info`} className="small-btn"> &lt;- back</Link>
-            <Link to={`clarify`} className="small-btn">yes -&gt;</Link>
+            <Link to={`matches`} className="small-btn"> &lt;- back</Link>
+            <Link to={`closing`} className="small-btn">yes -&gt;</Link>
           </nav>
         </div>
       </>
