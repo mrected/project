@@ -1,0 +1,38 @@
+import React, { Component } from 'react'
+import { Link} from 'react-router-dom'
+import logo from '../images/main-logo.svg'
+
+class EnterInfo1 extends Component {
+  render() {
+    return (
+      <>
+        <div className="container enter-info">
+        <img src={logo} className="main-logo" alt="logo" />
+        <p>enter your information</p>
+          <form>
+          <div><label>first name: </label><input type="text" name="user-first-name" size="20" required /></div>
+          <div><label>nickname/alias: </label><input type="text" name="user-nickname" size="20" /></div>
+          <div><label>last name: </label><input type="text" name="user-last-name" size="20" required /></div>
+          <div className="gender-radio">
+            <label>gender: </label>
+            <label className="small-label" for="m">male</label>
+            <input type="radio" name="user-gender" value="m" id="m"></input>
+            <label className="small-label" for="f">female</label>
+            <input type="radio" name="user-gender" value="f" id="f"></input><br />
+          </div>
+          <div>
+            <label for="user-dob-year-month">dob <br /> month/year: </label><input id="user-dob" type="month" name="user-dob" />
+            <label for="user-dob-day"> day: </label><input id="user-dob-day" type="number" min="1" max="31" />
+          </div>
+          </form>
+          <p>page 1 - your info</p>
+          <nav className="main-footer">
+            <Link to={`search_info1`} className="small-btn">next -&gt;</Link>
+          </nav>
+        </div>
+      </>
+    )
+  }
+}
+
+export default EnterInfo1

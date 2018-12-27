@@ -29,7 +29,7 @@ class MatchedInfo extends Component {
         </Link>
           
           <nav className="main-footer">
-            <Link to={`search_info`} className="small-btn"> &lt;- back</Link>
+            <Link to={`search_info3`} className="small-btn"> &lt;- back</Link>
             <Link to={`clarify`} className="small-btn">next -&gt;</Link>
           </nav>
         </div>

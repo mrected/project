@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link} from 'react-router-dom'
 import logo from '../images/main-logo.svg'
 
-class EnterInfo extends Component {
+class EnterInfo2 extends Component {
   render() {
     return (
       <>
@@ -10,17 +10,6 @@ class EnterInfo extends Component {
         <img src={logo} className="main-logo" alt="logo" />
         <p>enter your information</p>
           <form>
-          <label>your first name: </label><input type="text" name="user-first-name" size="20" required /><br />
-          <label>nickname/alias: </label><input type="text" name="user-nickname" size="20" /><br />
-          <label>your last name: </label><input type="text" name="user-last-name" size="20" required /><br />
-          <div className="gender-radio">
-          <label>your gender: </label>
-            <label className="small-label" for="m">male</label>
-            <input type="radio" name="user-gender" value="m" id="m"></input>
-            <label className="small-label" for="f">female</label>
-            <input type="radio" name="user-gender" value="f" id="f"></input><br />
-          </div>
-          <label for="user-dob">dob: </label><input id="user-dob" type="date" name="user-dob" /><br />
           <label for="state">state you were born in: </label><select id="state">
             <option value="Birth State">- choose one -</option>
             <option value="user-Alabama">Alabama</option>
@@ -79,8 +68,10 @@ class EnterInfo extends Component {
           <label>your fathers first name: </label><input type="text" name="user-fathers-first" size="15" /><br />
           <label>your fathers last name: </label><input type="text" name="user-fathers-last" size="15" /><br />
           </form>
+          <p className="page">page 2 - your info</p>
           <nav className="main-footer">
-            <Link to={`search_info`} className="small-btn">next -&gt;</Link>
+            <Link to={`enter_info1`} className="small-btn"> &lt;- back</Link>
+            <Link to={`search_info1`} className="small-btn">next -&gt;</Link>
           </nav>
         </div>
       </>
@@ -88,4 +79,4 @@ class EnterInfo extends Component {
   }
 }
 
-export default EnterInfo
+export default EnterInfo2

@@ -2,25 +2,15 @@ import React, { Component } from 'react'
 import { Link} from 'react-router-dom'
 import logo from '../images/main-logo.svg'
 
-class SearchInfo extends Component {
+class SearchInfo2 extends Component {
   render() {
     return (
       <>
         <div className="container enter-info">
         <img src={logo} className="main-logo" alt="logo" />
-        <p>enter any information about who you're looking for</p>
+        <p>who you're looking for</p>
           <form>
-          <label>their first name: </label><input type="text" name="search-first-name" size="20"  /><br />
-          <label>their last name: </label><input type="text" name="search-last-name" size="20"  /><br />
-          <div className="gender-radio">
-          <label>their gender: </label>
-            <label className="small-label" for="m">male</label>
-            <input type="radio" name="search-gender" value="m" id="m"></input>
-            <label className="small-label" for="f">female</label>
-            <input type="radio" name="search-gender" value="f" id="f"></input><br />
-          </div>
-          <label for="search-dob">dob: </label><input id="search-dob" type="date" name="search-dob" /><br />
-          <label for="state">state they were born in: </label><select id="state">
+          <div><label for="state">state they were born in: </label><select id="state">
             <option value="Birth State">- choose one -</option>
             <option value="search-Alabama">Alabama</option>
             <option value="search-Alaska">Alaska</option>
@@ -72,10 +62,10 @@ class SearchInfo extends Component {
             <option value="search-West Virginia">West Virginia</option>
             <option value="search-Wisconsin">Wisconsin</option>
             <option value="search-Wyoming">Wyoming</option>
-          </select><br />
-          <label>last year you saw them: </label><input type="number" min="1900" max="2018" name="search-last-year" size="4" /><br />
-          <label>last place you saw them: </label><input type="text" name="search-last-place" size="15" /><br />
-          <label for="user-relation">you are this persons: </label><select id="relation">
+          </select></div>
+          <div><label>last year you saw them: </label><input type="number" min="1900" max="2018" name="search-last-year" size="4" /></div>
+          <div><label>last place you saw them: </label><input type="text" name="search-last-place" size="15" /></div>
+          <div><label for="user-relation">you are this persons: </label><select id="relation">
             <option>- choose one -</option>
             <option value="mother">mother</option>
             <option value="father">father</option>
@@ -84,8 +74,8 @@ class SearchInfo extends Component {
             <option value="mother">friend</option>
             <option value="mother">other - family member</option>
             <option value="mother">other - not related</option>
-          </select><br />
-          <label for="search-relation">they are your: </label><select id="relation">
+          </select></div>
+          <div><label for="search-relation">they are your: </label><select id="relation">
             <option>- choose one -</option>
             <option value="mother">mother</option>
             <option value="father">father</option>
@@ -94,23 +84,20 @@ class SearchInfo extends Component {
             <option value="mother">friend</option>
             <option value="mother">other - family member</option>
             <option value="mother">other - not related</option>
-          </select><br />
-          <label for="reason">reason for separation: </label><select id="reason">
+          </select></div>
+          <div><label for="reason">reason for separation: </label><select id="reason">
             <option>- choose one -</option>
             <option value="parent-divorced">parents divorced</option>
             <option value="divorce">you divorced</option>
             <option value="adoption">adoption</option>
             <option value="parent-divorced">relocated</option>
             <option value="parent-divorced">unknown/other</option>
-          </select><br />
-          <label>their mothers first name: </label><input type="text" name="search-mothers-first" size="15" /><br />
-          <label>their mothers last name: </label><input type="text" name="search-mothers-last" size="15" /><br />
-          <label>their fathers first name: </label><input type="text" name="search-fathers-first" size="15" /><br />
-          <label>their fathers last name: </label><input type="text" name="search-fathers-last" size="15" /><br />
+          </select></div>
+          <p className="page">page 2</p>
           </form>
           <nav className="main-footer">
-            <Link to={`enter_info`} className="small-btn"> &lt;- back</Link>
-            <Link to={`matches`} className="small-btn">next -&gt;</Link>
+            <Link to={`search_info1`} className="small-btn"> &lt;- back</Link>
+            <Link to={`search_info3`} className="small-btn">next -&gt;</Link>
           </nav>
         </div>
       </>
@@ -118,4 +105,4 @@ class SearchInfo extends Component {
   }
 }
 
-export default SearchInfo
+export default SearchInfo2

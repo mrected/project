@@ -8,9 +8,9 @@ class Start extends Component {
   render() {
     return (
       <>
-        <div className="login">
+        <div className="container login">
           <img src={logo} className="main-logo" alt="logo" />
-          <Link to={`enter_info`}>
+          <Link to={`enter_info1`}>
             <img src={tempAuth} alt="auth goes here" className="temp-auth"/>
           </Link>
         </div>
