@@ -32,8 +32,7 @@ body {
 
 .main-logo {
   width: 60%;
-  /* max-width: 600px; */
-  margin-bottom: 50px;
+  margin-top: 20px;
 }
 
 .big-btn{
@@ -72,40 +71,19 @@ body {
 
 
 .main-footer {
-  position: absolute;
   width: 100%;
   bottom: 0;
   display: flex;
   justify-content: center;
-  height: 60px;
-  padding: 20px 0;
-  border-top: solid 3px var(--accent-color-two);
+  border-top: solid 1px var(--accent-color-one);
 }
 
-.main-footer a,
-.main-footer {
-  font-size: 3rem;
-  font-family: var(--sans-serif-font);
-  font-weight: 400;
-  color: var(--white);
-}
 
-.main-footer a {
-  padding: 0 30px;
-  width: 100%;
-}
 
-.main-footer a:link,
-.main-footer a:visited,
-.main-footer a:active {
-  color: var(--white);
-  text-decoration: none;
-}
 
-.main-footer a:hover {
-  color: var(--accent-color-one);
-  text-decoration: none;
-}
+
+
+
 
 /* splash --------------------------------------------------- */
 
@@ -178,15 +156,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-family: var(--sans-serif-font);
   color: var(--white);
   font-size: .85rem;
   line-height: 2;
-}
-
-.enter-info .main-logo{
-  margin-bottom: 30px;
 }
 
 .enter-info input,

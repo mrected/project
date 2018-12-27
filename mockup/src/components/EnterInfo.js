@@ -79,7 +79,9 @@ class EnterInfo extends Component {
           <label>your fathers first name: </label><input type="text" name="user-fathers-first" size="15" /><br />
           <label>your fathers last name: </label><input type="text" name="user-fathers-last" size="15" /><br />
           </form>
-          <Link to={`search_info`} className="small-btn">next -></Link>
+          <nav className="main-footer">
+            <Link to={`search_info`} className="small-btn">next -&gt;</Link>
+          </nav>
         </div>
       </>
     )

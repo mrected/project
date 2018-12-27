@@ -108,7 +108,7 @@ class SearchInfo extends Component {
           <label>their fathers first name: </label><input type="text" name="search-fathers-first" size="15" /><br />
           <label>their fathers last name: </label><input type="text" name="search-fathers-last" size="15" /><br />
           </form>
-          <nav>
+          <nav className="main-footer">
             <Link to={`enter_info`} className="small-btn"> &lt;- back</Link>
             <Link to={`matches`} className="small-btn">next -&gt;</Link>
           </nav>
