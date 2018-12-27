@@ -207,6 +207,28 @@ body {
 
 /* matched screen --------------------------------------------------- */
 
+.matches {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--sans-serif-font);
+  color: var(--white);
+  font-size: .85rem;
+  line-height: 2;
+}
+
+.matches .big-btn {
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 10px;
+  margin:0;
+  border: solid 2px var(--white);
+  border-radius: 15px;
+  max-width: 300px;
+  width: 40%;
+}
+
 /* search clarification --------------------------------------------------- */
 
 /* search started --------------------------------------------------- */
