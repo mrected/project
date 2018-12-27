@@ -16,6 +16,10 @@ body {
   background-color: var(--main-bg-color);
 }
 
+h1{
+  font-size: 1.5rem;
+}
+
 .container {
   width: 100%;
   height: 100vh;
@@ -78,7 +82,6 @@ section{
   background-color: var(--accent-color-one);
 }
 
-
 footer p {
   color: var(--white);
   font-size: .65rem;
@@ -92,6 +95,7 @@ footer p {
   display: flex;
   justify-content: center;
   border-top: solid 1px var(--accent-color-one);
+  padding-bottom: 5px;
 }
 
 
@@ -267,5 +271,6 @@ form{
 
 .closing p{
   padding: 0 20px;
-  font-size: 1rem;
+  font-size: .85rem;
+  line-height: 1.5;
 }

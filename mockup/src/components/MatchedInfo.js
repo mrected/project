@@ -8,7 +8,7 @@ class MatchedInfo extends Component {
       <>
         <div className="container matches">
         <img src={logo} className="main-logo" alt="logo" />
-        <p>these people match your search criteria</p>
+        <p>These people match your search criteria. <br /> Select the one you think is more likely who you're looking for</p>
 
         <Link to={`clarify`} className="big-btn">
           Kayla M. <br />
@@ -17,14 +17,6 @@ class MatchedInfo extends Component {
 
         <Link to={`clarify`} className="big-btn">
           <p>Jane D.</p>
-          <p>Age 24</p>
-        </Link>
-        <Link to={`clarify`} className="big-btn">
-          <p>Janet D.</p>
-          <p>Age 24</p>
-        </Link>
-        <Link to={`clarify`} className="big-btn">
-          <p>Janet D.</p>
           <p>Age 24</p>
         </Link>
           

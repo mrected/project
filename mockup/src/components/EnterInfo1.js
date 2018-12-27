@@ -30,6 +30,7 @@ class EnterInfo1 extends Component {
           <footer>
             <p>page 1 - your info</p>
             <nav className="footer-nav">
+              <Link to={`enter_info_instruction`} className="small-btn"> &lt;- back</Link>
               <Link to={`enter_info2`} className="small-btn">next -&gt;</Link>
             </nav>
           </footer>

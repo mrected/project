@@ -10,7 +10,7 @@ class Start extends Component {
       <>
         <div className="container login">
           <img src={logo} className="main-logo" alt="logo" />
-          <Link to={`enter_info1`}>
+          <Link to={`enter_info_instruction`}>
             <img src={tempAuth} alt="auth goes here" className="temp-auth"/>
           </Link>
         </div>

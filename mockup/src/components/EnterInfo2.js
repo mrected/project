@@ -77,7 +77,7 @@ class EnterInfo2 extends Component {
               <p className="page">page 2 - your info</p>
               <nav className="footer-nav">
                 <Link to={`enter_info1`} className="small-btn"> &lt;- back</Link>
-                <Link to={`search_info1`} className="small-btn">next -&gt;</Link>
+                <Link to={`search_info_instruction`} className="small-btn">next -&gt;</Link>
               </nav>
             </footer>
         </div>

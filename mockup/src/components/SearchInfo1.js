@@ -30,7 +30,7 @@ class SearchInfo1 extends Component {
           <footer>
           <p className="page">page 1 - search info</p>
             <nav className="footer-nav">
-              <Link to={`enter_info2`} className="small-btn"> &lt;- back</Link>
+              <Link to={`search_info_instruction`} className="small-btn"> &lt;- back</Link>
               <Link to={`search_info2`} className="small-btn">next -&gt;</Link>
             </nav>
           </footer>
