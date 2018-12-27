@@ -231,4 +231,23 @@ body {
 
 /* search clarification --------------------------------------------------- */
 
+.clarification {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--sans-serif-font);
+  color: var(--white);
+  font-size: .85rem;
+  line-height: 2;
+}
+
+.clarification li{
+  font-size: 1.25rem;
+}
+
+.clarification .data{
+  font-weight: bold;
+}
+
 /* search started --------------------------------------------------- */
