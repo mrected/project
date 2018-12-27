@@ -13,7 +13,7 @@ class Splash extends Component {
         
           <p className="tagline">reconnect with someone <br />trying to reconnect with you</p>
 
-          <Link to={`login`} className="start-searching-btn">start searching...</Link>
+          <Link to={`login`} className="small-btn">start searching...</Link>
 
         </div>
       </>
