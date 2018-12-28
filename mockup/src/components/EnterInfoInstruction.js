@@ -12,7 +12,7 @@ class EnterInfoInstruction extends Component {
         <img src={logo} className="main-logo" alt="logo" />
         <h1>your information</h1>
         <p>
-            Over the next 2 screens you'll enter your personal information. 
+            In the next 2 screens you'll enter your personal information. 
             We'll use this information to search thru our database and compare 
             it to other users search criteria to see if there's any matches.
         </p>

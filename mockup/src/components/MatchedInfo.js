@@ -20,7 +20,7 @@ class MatchedInfo extends Component {
               <p>Jane D.</p>
               <p>Age 24</p>
             </Link>
-            
+            <p>select one to verify more info</p>
           </section>
           <footer>
             <nav className="footer-nav">

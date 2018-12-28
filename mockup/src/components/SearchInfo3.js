@@ -18,7 +18,7 @@ class SearchInfo3 extends Component {
           </form>
         </section>
         <footer>
-          <p>page 3</p>
+          <p>page 3 - search info</p>
           <nav className="footer-nav">
             <Link to={`search_info2`} className="small-btn"> &lt;- back</Link>
             <Link to={`matches`} className="small-btn">next -&gt;</Link>

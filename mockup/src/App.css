@@ -6,7 +6,7 @@
   --accent-color-two: #100894;
   --button-hover: #10089433;
   --white: #e4e4ef;
-  --placeholder:#e4e4ef66;
+  --grey:#e4e4ef66;
   --serif-font:"quatro-slab", 'Times New Roman', Times, serif;
   --sans-serif-font:"quatro", sans-serif;
 }
@@ -185,7 +185,7 @@ footer p {
   color: var(--white);
   text-align: center;
   border:0;
-  border-bottom: solid var(--white) 1px;
+  border-bottom: dashed var(--grey) 1px;
   border-radius: 0;
 }
 
@@ -193,9 +193,6 @@ footer p {
   outline: none;
 }
 
-.enter-info input::placeholder {
-  color: var(--white);
-}
 
 form{
   display: flex;

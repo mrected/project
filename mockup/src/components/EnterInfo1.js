@@ -22,8 +22,8 @@ class EnterInfo1 extends Component {
               <input type="radio" name="user-gender" value="f" id="f"></input><br />
             </div>
             <div>
-              <label for="user-dob-year-month">dob <br /> month/year: </label><input id="user-dob" type="month" name="user-dob" />
-              <label for="user-dob-day"> day: </label><input id="user-dob-day" type="number" min="1" max="31" />
+              <label for="user-dob-year-month">dob <br /> <span className="small-label">month/year: </span></label><input id="user-dob" type="month" name="user-dob" />
+              <label for="user-dob-day"> <span className="small-label"><br />day: </span></label><input id="user-dob-day" type="number" min="1" max="31" />
             </div>
             </form>
           </section>
