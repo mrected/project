@@ -6,7 +6,9 @@ class EnterInfoInstruction extends Component {
   render() {
     return (
       <>
-        <div className="container clarification">
+        <div className="container">
+        
+        <section className="enter-info">
         <img src={logo} className="main-logo" alt="logo" />
         <h1>your information</h1>
         <p>
@@ -17,11 +19,15 @@ class EnterInfoInstruction extends Component {
         <p>
             Please fill out every field that applies to you. The more information you enter, the more accurate match we can make.
         </p>
+        </section>
 
+        <footer>
+          {/* <p className="page">page 2 - your info</p> */}
           <nav className="footer-nav">
             <Link to={`exit`} className="small-btn">not yet</Link>
             <Link to={`enter_info1`} className="small-btn">ok -&gt;</Link>
           </nav>
+        </footer>
         </div>
       </>
     )

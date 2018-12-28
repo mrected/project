@@ -6,10 +6,11 @@ class Clarification extends Component {
   render() {
     return (
       <>
-        <div className="container clarification">
+        <div className="container">
+        <section className="clarification">
         <img src={logo} className="main-logo" alt="logo" />
         <p>this is probably the person you're looking for</p>
-        <p>the following fields matched your search criteria:</p>
+        <p>these areas matched your search criteria:</p>
         <ul>
           <li>first name: <span className="data">michaela</span></li>
           <li>last initial: <span className="data">m</span></li>
@@ -21,11 +22,13 @@ class Clarification extends Component {
           <li>last seen: <span className="data">1996</span></li>
         </ul>
         <p>do you think this is a match?</p>
-          
-          <nav className="main-footer">
+        </section>
+        <footer>
+          <nav className="footer-nav">
             <Link to={`matches`} className="small-btn"> &lt;- back</Link>
             <Link to={`closing`} className="small-btn">yes -&gt;</Link>
           </nav>
+          </footer>
         </div>
       </>
     )

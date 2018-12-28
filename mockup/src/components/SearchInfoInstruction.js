@@ -6,7 +6,8 @@ class SearchInfoInstruction extends Component {
   render() {
     return (
       <>
-        <div className="container clarification">
+        <div className="container">
+        <section className="enter-info">
         <img src={logo} className="main-logo" alt="logo" />
         <h1>their information</h1>
         <p>
@@ -17,11 +18,13 @@ class SearchInfoInstruction extends Component {
             Fill out any field you can. Obviously you will probably be missing some information, 
             but the more you can provide the more likely we'll find them.
         </p>
-
-          <nav className="footer_nav">
+        </section>
+        <footer>
+          <nav className="footer-nav">
             <Link to={`enter_info2`} className="small-btn"> &lt;- back</Link>
             <Link to={`search_info1`} className="small-btn">ok -&gt;</Link>
           </nav>
+          </footer>
         </div>
       </>
     )
